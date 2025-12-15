@@ -22,18 +22,52 @@
               drop-shadow-[0_0_30px_rgba(255,200,0,0.3)]"/>
 </div>
 
-<!-- HERO -->
-<section class="min-h-screen flex items-center justify-center text-center px-6">
-  <div class="max-w-4xl">
+<!-- HERO CINEMATIC -->
+<section class="relative min-h-screen flex items-center justify-center text-center px-6 overflow-hidden">
 
-    <h1 class="text-4xl md:text-6xl font-bold mb-6">
+  <!-- Background image -->
+  <img
+    src="bg2.jpeg"
+    alt="Germany background"
+    class="absolute inset-0 w-full h-full object-cover scale-110 opacity-25"
+  />
+
+  <!-- Dark vignette -->
+  <div class="absolute inset-0 bg-gradient-to-b
+              from-black/90 via-black/60 to-black/95"></div>
+
+  <!-- Soft yellow glow -->
+  <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,200,0,0.08),transparent_65%)]"></div>
+
+  <!-- Grain texture -->
+  <div class="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22%3E%3Cfilter id=%22n%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.8%22 numOctaves=%224%22/%3E%3C/filter%3E%3Crect width=%22100%22 height=%22100%22 filter=%22url(%23n)%22 opacity=%220.03%22/%3E%3C/svg%3E')]"></div>
+
+  <!-- Content -->
+  <div class="relative z-10 max-w-4xl">
+
+    <h1 class="text-5xl md:text-7xl font-extrabold mb-8 tracking-tight">
       Goethe B1 in 2 Months ⚡
     </h1>
 
-    <p class="text-xl text-gray-300 mb-16">
-      A no-bullshit, exam-first roadmap designed
-      to get you through Goethe B1 with confidence.
+    <p class="text-xl md:text-2xl text-gray-300 mb-14 leading-relaxed">
+      A focused, exam-first roadmap designed to maximize your score —
+      <span class="text-yellow-400 font-semibold">without wasting time.</span>
     </p>
+
+    <a href="#grammar"
+       class="inline-flex items-center gap-3
+              bg-yellow-400 text-black
+              px-16 py-6 rounded-2xl
+              text-2xl font-bold
+              hover:bg-yellow-300
+              transition
+              shadow-2xl shadow-yellow-400/40
+              hover:scale-[1.03]">
+      🚀 Start the Roadmap
+    </a>
+
+  </div>
+</section>
 
     <!-- ROADMAP LINKS -->
     <div class="grid md:grid-cols-2 gap-8 text-left">
@@ -139,3 +173,4 @@
 
 </body>
 </html>
+

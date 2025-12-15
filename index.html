@@ -9,38 +9,60 @@
 
 <body class="bg-black text-white font-sans">
 
-  <!-- HERO -->
-  <section class="relative min-h-screen flex items-center justify-center px-6">
+ <!-- HERO -->
+<section class="relative min-h-screen flex items-center justify-center px-6 overflow-hidden">
 
-    <img src="bg.jpg"
-         alt="Germany background"
-         class="absolute inset-0 w-full h-full object-cover" />
+  <!-- Background image -->
+  <img
+    src="bgo.jpg"
+    alt="Germany background"
+    class="absolute inset-0 w-full h-full object-cover scale-105"
+  />
 
-    <div class="absolute inset-0 bg-black/70"></div>
+  <!-- Gradient overlay (lebih cinematic) -->
+  <div class="absolute inset-0 bg-gradient-to-b
+              from-black/80 via-black/60 to-black/90"></div>
 
-    <div class="relative z-10 max-w-4xl text-center">
-      <img src="logo.jpeg"
-           alt="LightningWayToGermany Logo"
-           class="mx-auto mb-10 w-64 md:w-80
-                  drop-shadow-[0_0_40px_rgba(255,200,0,0.35)]" />
+  <!-- Content -->
+  <div class="relative z-10 max-w-4xl text-center">
 
-      <h1 class="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
-        LightningWayToGermany ⚡
-      </h1>
-
-      <p class="text-xl md:text-2xl text-gray-200 mb-8">
-        A serious, practical path to master German<br />
-        and aim for <span class="text-yellow-400 font-semibold">
-        100/100 in the Goethe B1 exam</span>.
-      </p>
-
-      <a href="#b1"
-         class="inline-block bg-yellow-400 text-black px-10 py-4 rounded-xl
-                font-semibold text-lg hover:bg-yellow-300 transition">
-        🎯 B1 in 2 Months
-      </a>
+    <!-- Logo container -->
+    <div class="mx-auto mb-10 w-64 md:w-80
+                rounded-2xl
+                bg-black/60 backdrop-blur-md
+                p-4
+                shadow-[0_0_60px_rgba(255,200,0,0.35)]">
+      <img
+        src="logo.jpeg"
+        alt="LightningWayToGermany Logo"
+        class="w-full rounded-xl"
+      />
     </div>
-  </section>
+
+    <h1 class="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
+      LightningWayToGermany ⚡
+    </h1>
+
+    <p class="text-xl md:text-2xl text-gray-200 mb-10">
+      A serious, practical path to master German<br />
+      and aim for
+      <span class="text-yellow-400 font-semibold">
+        100/100 in the Goethe B1 exam
+      </span>.
+    </p>
+
+    <a
+      href="#b1"
+      class="inline-flex items-center gap-2
+             bg-yellow-400 text-black px-10 py-4 rounded-xl
+             font-semibold text-lg hover:bg-yellow-300 transition
+             shadow-lg shadow-yellow-400/30"
+    >
+      🎯 B1 in 2 Months
+    </a>
+
+  </div>
+</section>
 
   <!-- PHILOSOPHY -->
   <section class="py-24 px-6 bg-neutral-950">
@@ -128,3 +150,4 @@
 
 </body>
 </html>
+

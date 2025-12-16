@@ -31,9 +31,10 @@
 
     <p class="text-gray-400 mb-14 text-lg">
       Full PDFs, templates, speaking frameworks, and exam strategies.<br>
-     <span class="text-yellow-400 font-semibold">
-      $4.99 · One-time payment · Lifetime access
-    </span>
+      <span class="text-yellow-400 font-semibold">
+        $4.99 · One-time payment · Lifetime access
+      </span>
+    </p>
 
     <div class="grid md:grid-cols-2 gap-12 items-center">
 
@@ -51,55 +52,60 @@
         <p class="text-sm text-gray-400 mt-4">
           Scan with your crypto wallet
         </p>
+
+        <p class="text-sm text-gray-400 mt-2">
+          Send exactly <span class="text-yellow-400 font-semibold">$4.99</span> via USDT (TRC20)
+        </p>
       </div>
 
-     <!-- INFO -->
-<div class="bg-neutral-900 rounded-3xl p-8 shadow-xl text-left">
-  <h3 class="text-xl font-semibold mb-4">
-    Payment Details
-  </h3>
+      <!-- INFO -->
+      <div class="bg-neutral-900 rounded-3xl p-8 shadow-xl text-left">
+        <h3 class="text-xl font-semibold mb-4">
+          Payment Details
+        </h3>
 
-  <ul class="space-y-3 text-gray-300 mb-6">
-    <li>✔ Network: <span class="text-yellow-400">TRC20</span></li>
-    <li>✔ Accepted: USDT (TRC20)</li>
-    <li>✔ Access: Lifetime Premium</li>
-  </ul>
+        <ul class="space-y-3 text-gray-300 mb-6">
+          <li>✔ Network: <span class="text-yellow-400">TRC20</span></li>
+          <li>✔ Accepted: USDT (TRC20)</li>
+          <li>✔ Price: <span class="text-yellow-400 font-semibold">$4.99</span></li>
+          <li>✔ Access: Lifetime Premium</li>
+        </ul>
 
-  <!-- WALLET -->
-  <div class="bg-black/40 p-4 rounded-xl mb-6">
-    <p class="text-sm text-gray-400 mb-2">Wallet Address</p>
+        <!-- WALLET -->
+        <div class="bg-black/40 p-4 rounded-xl mb-6">
+          <p class="text-sm text-gray-400 mb-2">Wallet Address</p>
 
-    <div class="flex items-center justify-between gap-3">
-      <code
-        id="wallet"
-        class="text-xs md:text-sm break-all text-white"
-      >
-        0xdd737fB52a692cC7b87FBEB057612494EDdC47aA
-      </code>
+          <div class="flex items-center justify-between gap-3">
+            <code
+              id="wallet"
+              class="text-xs md:text-sm break-all text-white"
+            >
+              0xdd737fB52a692cC7b87FBEB057612494EDdC47aA
+            </code>
 
-      <button
-        onclick="copyWallet()"
-        class="text-yellow-400 text-sm hover:underline"
-      >
-        Copy
-      </button>
-    </div>
-  </div>
+            <button
+              onclick="copyWallet()"
+              class="text-yellow-400 text-sm hover:underline"
+            >
+              Copy
+            </button>
+          </div>
+        </div>
 
-  <!-- TXID -->
-  <div class="bg-black/40 p-4 rounded-xl text-sm text-gray-400">
-    After payment, send your <span class="text-yellow-400">TXID</span>
-    to:
-    <br>
-    <span class="text-white font-semibold">
-      lightningwaytogermany@email.com
-    </span>
-  </div>
+        <!-- TXID -->
+        <div class="bg-black/40 p-4 rounded-xl text-sm text-gray-400">
+          After payment, send your <span class="text-yellow-400">TXID</span>
+          to:
+          <br>
+          <span class="text-white font-semibold">
+            lightningwaytogermany@email.com
+          </span>
+        </div>
 
-  <p class="mt-6 text-xs text-gray-500">
-    Access activated manually within 24 hours.
-  </p>
-</div>
+        <p class="mt-6 text-xs text-gray-500">
+          Access activated manually within 24 hours.
+        </p>
+      </div>
 
     </div>
 
@@ -132,8 +138,14 @@
   © 2025 LightningWayToGermany
 </footer>
 
+<!-- COPY SCRIPT -->
+<script>
+function copyWallet() {
+  const wallet = document.getElementById("wallet").innerText;
+  navigator.clipboard.writeText(wallet);
+  alert("Wallet address copied!");
+}
+</script>
+
 </body>
 </html>
-
-
-

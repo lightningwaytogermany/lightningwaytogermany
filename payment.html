@@ -54,31 +54,53 @@
         </p>
       </div>
 
-      <!-- INFO -->
-      <div class="bg-neutral-900 rounded-3xl p-8 shadow-xl text-left">
-        <h3 class="text-xl font-semibold mb-4">
-          Payment Details
-        </h3>
+     <!-- INFO -->
+<div class="bg-neutral-900 rounded-3xl p-8 shadow-xl text-left">
+  <h3 class="text-xl font-semibold mb-4">
+    Payment Details
+  </h3>
 
-        <ul class="space-y-3 text-gray-300">
-          <li>✔ Network: <span class="text-yellow-400">TRC20</span></li>
-          <li>✔ Accepted: USDT (TRC20)</li>
-          <li>✔ Access: Lifetime Premium</li>
-        </ul>
+  <ul class="space-y-3 text-gray-300 mb-6">
+    <li>✔ Network: <span class="text-yellow-400">TRC20</span></li>
+    <li>✔ Accepted: USDT (TRC20)</li>
+    <li>✔ Access: Lifetime Premium</li>
+  </ul>
 
-        <div class="mt-6 bg-black/40 p-4 rounded-xl text-sm text-gray-400">
-          After payment, send your <span class="text-yellow-400">TXID</span>
-          to:
-          <br>
-          <span class="text-white font-semibold">
-            your-email@email.com
-          </span>
-        </div>
+  <!-- WALLET -->
+  <div class="bg-black/40 p-4 rounded-xl mb-6">
+    <p class="text-sm text-gray-400 mb-2">Wallet Address</p>
 
-        <p class="mt-6 text-xs text-gray-500">
-          Access activated manually within 24 hours.
-        </p>
-      </div>
+    <div class="flex items-center justify-between gap-3">
+      <code
+        id="wallet"
+        class="text-xs md:text-sm break-all text-white"
+      >
+        0xdd737fB52a692cC7b87FBEB057612494EDdC47aA
+      </code>
+
+      <button
+        onclick="copyWallet()"
+        class="text-yellow-400 text-sm hover:underline"
+      >
+        Copy
+      </button>
+    </div>
+  </div>
+
+  <!-- TXID -->
+  <div class="bg-black/40 p-4 rounded-xl text-sm text-gray-400">
+    After payment, send your <span class="text-yellow-400">TXID</span>
+    to:
+    <br>
+    <span class="text-white font-semibold">
+      your-email@email.com
+    </span>
+  </div>
+
+  <p class="mt-6 text-xs text-gray-500">
+    Access activated manually within 24 hours.
+  </p>
+</div>
 
     </div>
 
@@ -113,3 +135,4 @@
 
 </body>
 </html>
+
